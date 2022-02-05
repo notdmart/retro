@@ -1,0 +1,24 @@
+{
+  "name": "retro",
+  "version": "1.0.0",
+  "description": "Basic retro host",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd back-end && npm run start",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notdmart/retro.git"
+  },
+  "author": "notdmart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/notdmart/retro/issues"
+  },
+  "homepage": "https://github.com/notdmart/retro#readme",
+  "private": true,
+  "workspaces": [
+    "back-end"
+  ]
+}

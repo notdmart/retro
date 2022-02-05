@@ -1,0 +1,36 @@
+{
+  "name": "retro",
+  "version": "0.1.0",
+  "description": "Retro backend",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "npm run deploy:dev",
+    "deploy:dev": "sls deploy --stage=dev",
+    "deploy:prod": "sls deploy --stage=prod",
+    "start": "",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notdmart/retro.git"
+  },
+  "author": "notdmart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/notdmart/retro/issues"
+  },
+  "homepage": "https://github.com/notdmart/retro#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "jest": "^27.4.5",
+    "serverless": "^3",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.4.0",
+    "tsc": "^2.0.3",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1048.0"
+  },
+  "private": true
+}
