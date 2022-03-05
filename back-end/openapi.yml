@@ -1,0 +1,14 @@
+openapi: 3.0.0
+info:
+  title: Continuous Retro
+  description: API for a continuous retro back-end
+  version: 0.0.1
+paths:
+  /:
+    get:
+      summary: Health check
+      description: Returns whether the retro service is running
+      operationId: get-health-check
+      responses:
+        204:
+          description: The service is functioning correctly

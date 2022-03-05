@@ -4,12 +4,26 @@ frameworkVersion: "3"
 provider:
   name: aws
   runtime: nodejs14.x
-  lambdaHashingVersion: 20201221
+  apiGateway:
+    apiKeys:
+      - ${opt:stage}-initial-key
+
+plugins:
+  - serverless-webpack
 
 functions:
-  hello:
-    handler: src/handler.hello
+  health:
+    handler: src/health.handle
     events:
-      - httpApi:
+      - http:
           method: get
           path: /
+          private: true
+
+package:
+  individually: true
+
+custom:
+  webpack:
+    includeModules: false
+    keepOutputDirectory: true
